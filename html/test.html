@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="jquery.flipster.min.css">
+</head>
+<body>
+  
+ 
+  <div class="hero">
+    <div class="menu">
+			<nav>
+				<ul>
+					<li><a href="Mclaren.html"><b>Home</b> </a></li>
+					<li><a href="test.html"><b>Gallery</b></a></li>
+					<li><a href="index.html"><b>About</b></a></li>
+					<li><a href="Retailers.html"><b>Dealership</b></a></li>
+				</ul>
+			</nav>
+		</div>
+    <div class="carousel">
+
+      <ul>
+        <li><img src="/images/mc(1).jpg" alt=""></li>
+        <li><img src="/images/mc(2).jpg" alt=""></li>
+        <li><img src="/images/mc(3).jpg" alt=""></li>
+        <li><img src="/images/mc(4).jpg" alt=""></li>
+        <li><img src="/images/mc(5).jpg" alt=""></li>
+        <li><img src="/images/mc(6).jpg" alt=""></li>
+        <li><img src="/images/mc(7).jpg" alt=""></li>
+        <li><img src="/images/mc(8).jpg" alt=""></li>
+        <li><img src="/images/mc(9).jpg" alt=""></li>
+      </ul>
+
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="jquery.flipster.min.js"></script>
+<script>
+$('.carousel').flipster({
+  style:'carousel';
+  spacing:-0.8;
+});
+</script>
+
+</body>
+</html>
