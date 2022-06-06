@@ -6,7 +6,7 @@
      -Ahmed Abdi
   
   ### About my project
-  [**google.com**]{http://www.google.com}
+  [**google.com**](http://www.google.com)
   
   My project is about Mclaren.The Mclaren project i created covers 4 aspects such as Homepage,About page, Gallery and Dealership.
   The homepage of my project is a simple, uniqe design.The page displays a video introducing Mclaren and has navs which links
