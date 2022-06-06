@@ -1,0 +1,103 @@
+*{/*global element*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;}
+
+/*sets width and height, makes background black and prevents scroll bar from showing up*/
+    .hero{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+.hero .carousel ul li{
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+
+
+
+
+    .Layout{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0%;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.menu{
+    top: 10;
+}
+nav{
+    display: flex;
+    place-items: top right ;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+	color: blue;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block ; 
+    list-style: none;
+    margin: 10px 30px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(250, 15, 15);
+    transition: width 0.7s;
+}
+
+nav ul li a:hover::after{
+    width: 50px;
+}
+ 
+
+@keyframes content {
+    0%   { 
+    transform: translateY(235%); 		
+    }
+    100% { 
+    translate: translateY(50%); /*changed the transform to translate to prevent animation flickering */
+    }  
+   }
+.back-video{
+position: fixed;
+z-index: -1;
+}
+@media (max-aspect-ratio: 16/9){
+   .back-video{
+     width: auto;
+    height: 100%;
+   }
+}
